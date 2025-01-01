@@ -1,0 +1,14 @@
+```
+
+### Step 3: Create a `docker-compose.yml` file
+
+Create a file named `docker-compose.yml` with the following content:
+
+```yaml
+version: '3.8'
+
+services:
+  calc:
+    build: .
+    container_name: calc_service
+    command: python calc.py
